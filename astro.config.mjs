@@ -3,5 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'Calm-the-FI-Down.github.io'
+    site: 'https://calm-the-fi-down.github.io/'
 });
