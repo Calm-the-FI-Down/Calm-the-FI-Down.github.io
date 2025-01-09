@@ -1,0 +1,8 @@
+.todo-item {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 8px;
+}
+.todo-item:has(:checked) p {
+    color: #00ff66;
+}

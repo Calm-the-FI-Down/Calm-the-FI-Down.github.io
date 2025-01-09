@@ -1,14 +1,41 @@
-// import React, { useState } from 'react';
+// import React, { Component } from 'react';
 
-// export default function LikeButton() {
-//   const [likes, setLikes] = useState(0);
+// class ButtonIncrementer extends Component {
+//   state = {
+//     age: 42,
+//   };
 
-//   return (
-//     <button onClick={() => setLikes(prev => prev + 1)}>
-//       Likes: {likes}
-//     </button>
-//   );
+//   handleAmountChange = () => {
+//     this.setState({
+//       age: this.state.age + 1 
+//     });
+//   };
+
+//   render() {
+//     return (
+//       <>
+//         <button onClick={this.handleAmountChange}>
+//           Increment amount.
+//         </button>
+//         <p>You have ${this.state.age}.</p>
+//       </>
+//     );
+//   }
 // }
+
+// export default ButtonIncrementer;
+
+import React, { useState } from 'react';
+
+export default function LikeButton() {
+  const [likes, setLikes] = useState(0);
+
+  return (
+    <button onClick={() => setLikes(prev => prev + 1)}>
+      Likes: {likes}
+    </button>
+  );
+}
 
 // import React, { useState } from 'react';
 
@@ -29,29 +56,3 @@
 
 // export default LikeButton;
 
-import React, { Component } from 'react';
-
-class ButtonIncrementer extends Component {
-  state = {
-    age: 42,
-  };
-
-  handleAgeChange = () => {
-    this.setState({
-      age: this.state.age + 1 
-    });
-  };
-
-  render() {
-    return (
-      <>
-        <button onClick={this.handleAgeChange}>
-          Increment amount.
-        </button>
-        <p>You have ${this.state.age}.</p>
-      </>
-    );
-  }
-}
-
-export default ButtonIncrementer;
