@@ -1,8 +1,18 @@
-.todo-item {
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+div.todo-list {
+    width: 800px;
+    margin: auto;
+  }
+
+/* .todo-item {
     display: flex;
     justify-content: left;
     margin-bottom: 8px;
 }
 .todo-item:has(:checked) p {
     color: #00ff66;
-}
+} */
