@@ -7,17 +7,6 @@ function ToDoItem({task, toggleCompleted }) {
         toggleCompleted(task.id);
     }
 
-    // return (
-    //     <li className="todo-item">
-    //         <input 
-    //             type="checkbox"
-    //             checked={task.completed}
-    //             onChange={handleChange}
-    //         />
-    //         <div>{task.text}</div> <div>{task.completed ? emoji.getUnicode("check_mark_button") : emoji.getUnicode("white_medium_square")}</div>
-    //     </li>
-    // );
-
     const completedStyle = "bg-green-200 hover:bg-green-300 scale-95";
     const notCompletedStyle = "bg-gray-200 hover:bg-gray-300 ";
 
