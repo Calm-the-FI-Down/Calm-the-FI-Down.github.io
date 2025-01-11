@@ -19,12 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
+
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
       - name: Install dependencies
         run: | 
           rm -rf node_modules 
           npm ci
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
       - name: List Astro Files
         run: ls -R node_modules/astro/dist/core/routing/manifest  
       - name: Install, build, and upload your site
