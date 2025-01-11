@@ -18,8 +18,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: npm clean
-        run: npm i
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: List Astro Files
