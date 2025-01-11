@@ -1,8 +1,6 @@
 import React from 'react';
 
 function ToDoItem({task, toggleCompleted }) {
-
-
     function handleChange() {
         toggleCompleted(task.id);
     }
@@ -23,7 +21,6 @@ function ToDoItem({task, toggleCompleted }) {
         <div className="flex-1 px-8 text-center">{task.text}</div> <div className="text-2xl">{task.completed ? "✅" : "⬜"}</div>
         </li>
     );
-    
 }
 
 export default ToDoItem;
