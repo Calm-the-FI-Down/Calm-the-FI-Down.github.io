@@ -6,5 +6,10 @@ import tailwind from '@astrojs/tailwind'
 
 export default defineConfig({
   site: 'https://calm-the-fi-down.github.io/',
-  integrations: [react(), tailwind()]
+  integrations: [react(), tailwind()],
+  vite: {
+    resolve: {
+      extensions: ['.js', '.jsx']
+    }
+  }
 });
