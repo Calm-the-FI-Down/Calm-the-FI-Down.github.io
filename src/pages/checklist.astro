@@ -3,6 +3,7 @@ import App from '../App.jsx';
 import Header from '../components/Header.jsx';
 import '../App.css';
 import React from 'react';
+import KoFiButton from '../components/KoFiButton.jsx';
 title: 'Calm the FI Down About'
 pubDate: '2025-01-06'
 description: 'This is a complete checklist to success in personal finance'
@@ -24,7 +25,13 @@ tags: ["personal finance", "personal finance checklist", "FIRE", "financial inde
 	<body class="container mx-auto px-4">
 		<body class="container mx-auto px-4">
 			<h1 class="text-center text-4xl font-extrabold mb-4">Personal Finance Checklist</h1>
-			<p class="text-center mb-8">How's your personal finance journey going?</p>
+			<p class="text-center mb-4">How's your personal finance journey going?</p>
+			<p class="text-center mb-2">If this list was useful:</p>
+			<div class="mb-8", style={{
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+			}}><KoFiButton client:load/></div>
 			<App client:load/>
 		  </body>
 	</body>
