@@ -2,14 +2,9 @@
 import { defineConfig } from 'astro/config';
 
 import react from '@astrojs/react';
-import tailwind from '@astrojs/tailwind'
+import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://calm-the-fi-down.github.io/',
-  integrations: [react(), tailwind()],
-  vite: {
-    resolve: {
-      extensions: ['.js', '.jsx']
-    }
-  }
+  integrations: [react(), tailwind()]
 });
