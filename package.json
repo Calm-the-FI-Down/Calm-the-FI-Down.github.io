@@ -16,10 +16,15 @@
     "astro": "^5.1.5",
     "autoprefixer": "^10.4.20",
     "drizzle-orm": "^0.38.3",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
+    "emoji-chars": "^1.0.12",
     "emoji-dictionary": "^1.0.11",
+    "emojilib": "^4.0.1",
     "postcss-cli": "^11.0.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
