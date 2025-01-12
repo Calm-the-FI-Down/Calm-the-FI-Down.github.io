@@ -18,8 +18,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      
+
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 23
+      - run: npm ci
+      - run: npm run build
+      - name: List Astro Files
+        run: ls -R node_modules/astro/dist/core/routing/manifest  
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         # with:
