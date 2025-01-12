@@ -1,8 +1,11 @@
 ---
+import '../App.css';
+import Header from '../components/Header.jsx';
 ---
 
-<a href="/">Home</a>
-<a href="/checklist/">Checklist</a>
+
+<Header>
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -11,7 +14,19 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Calm the FI Down</title>
 	</head>
-	<body>
-		<h1>Hello World and Goodbye FI Stress.</h1>
+
+
+	<body class="container mx-auto px-4">
+		<body class="container mx-auto px-4">
+			<h1 class="text-center text-4xl font-extrabold mb-6 mt-4">Hello World and Goodbye FI Stress.</h1>
+			<p class="text-center mb-2 mt-8">Need a pointer for your personal finance journey? Check out our
+				<a 
+				href="/checklist/" 
+				class="white-space: pre-line bg-blue-500 text-white font-bold py-2 px-3 rounded hover:bg-blue-700 transition-all"
+				>
+				Personal Finance Checklist
+				</a>
+			</p>
+		  </body>
 	</body>
 </html>
