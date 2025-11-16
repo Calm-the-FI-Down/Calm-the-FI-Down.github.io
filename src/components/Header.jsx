@@ -1,4 +1,4 @@
-import '../App.css';
+import '../JourneyChecklistApp.css';
 
 export default function HeaderComponent(){
     return (
